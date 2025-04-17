@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+hr {
+  border-top: 2px solid black;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+/* ------------swiper------------------- */
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------swiper------------------- */
+
+.outer_container {
+  max-width: 1300px;
+  margin: 0rem auto;
+}
+
+/* -----------header---------------- */
+
+header {
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+}
+
+header > div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo_container img {
+  width: 40%;
+}
+
+.discover_container ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-weight: 800;
+}
+
+.sign_in_container button {
+  background-color: #34E0A1;
+  color: black;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/* --------------section1---------------- */
+
+.city_list {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin-top: 2rem;
+  gap: 0.5rem;
+}
+
+.city_list_h1_container h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.city_list_h3_container h2 {
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.city_list_swiper_container {
+  margin-top: 2rem;
+}
+
+.card {
+  height: 45vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.card div {
+  background-color: rgb(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 5%;
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 900;
+  width: 100%;
+  text-transform: capitalize;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* -----------------section<city>---------------- */
+
+.max_container {
+  margin: 1rem auto;
+  max-width: 1000px;
+}
+
+.image_gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 250px;
+  grid-auto-rows: 210px;
+  gap: 0.5rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+.image_gallery > div img {
+  width: 100%;
+  height: 100%;
+}
+
+.image_gallery > div:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+.image_gallery > div:nth-child(2) {
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.image_gallery > div:nth-child(5) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.heading_container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.heading_container h1 {
+  text-transform: capitalize;
+  font-weight: 800;
+}
+
+.things_todo {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.things_todo_heading h2 {
+  text-transform: capitalize;
+  font-weight: 800;
+}
+
+.things_todo_card_container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  justify-content: center;
+}
+
+.things_todo_card_container > div {
+  flex-basis: 35%;
+}
+
+.things_todo_card {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  overflow: hidden;
+  width: 30%;
+}
+
+.things_todo_card_img {
+  flex-grow: 1;
+}
+
+.things_todo_card_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.things_todo_card_info h3 {
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.place_container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 1rem;
+}
+
+.place_heading {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.place_heading h1 {
+  font-weight: 900;
+}
+
+.place_info {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+.place_info > div:nth-child(1) {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.place_info > div:nth-child(2) {
+  width: 100%;
+}
+.place_info > div:nth-child(2) img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.button_container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}

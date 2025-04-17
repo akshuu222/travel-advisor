@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hotel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"
+      defer
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="outer_container">
+      <header>
+        <div class="logo_container">
+          <img
+            src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg"
+            alt="logo"
+          />
+        </div>
+        <div class="discover_container">
+          <ul>
+            <li>Discover</li>
+            <li>Trips</li>
+            <li>Review</li>
+            <li>Forums</li>
+          </ul>
+        </div>
+        <div class="sign_in_container">
+          <button>sign in</button>
+        </div>
+      </header>
+      <!-- ---------------------section1------------------- -->
+      <div id="section1" class="max_container">
+        <div class="city_list">
+          <!-- ///////////1/////////////// -->
+          <div class="city_list_h1_container">
+            <h1>Dream Your Next Trip</h1>
+          </div>
+          <!-- ///////////2/////////////// -->
+          <div class="city_list_h3_container">
+            <h2>Weekend getaways from Bengaluru</h2>
+          </div>
+          <div class="city_list_swiper_container">
+            <swiper-container
+              class="mySwiper"
+              space-between="30"
+              slides-per-view="3"
+              navigation="true"
+              autoplay-delay="2500"
+              autoplay-disable-on-interaction="false"
+            >
+              <swiper-slide>
+                <div class="card" onclick="display('section_mysore')">
+                  <img
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/79/6f/89/sri-chamundeshwari-temple.jpg?w=300&h=300&s=1"
+                    alt="mysore"
+                  />
+                  <div>
+                    <h2>Mysore, India</h2>
+                  </div>
+                </div>
+              </swiper-slide>
+              <swiper-slide>
+                <div class="card" onclick="display('section_ooty')">
+                  <img
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/84/3c/bc/upper-bhavani-lake.jpg?w=300&h=300&s=1"
+                    alt="ooty"
+                  />
+                  <div>
+                    <h2>ooty, India</h2>
+                  </div>
+                </div>
+              </swiper-slide>
+              <swiper-slide>
+                <div class="card" onclick="display('section_madikeri')">
+                  <img
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/e8/14/c9/closeup-view.jpg?w=300&h=300&s=1"
+                    alt="madikeri"
+                  />
+                  <div>
+                    <h2>madikeri, India</h2>
+                  </div>
+                </div>
+              </swiper-slide>
+              <swiper-slide>
+                <div class="card" onclick="display('section_tirupati')">
+                  <img
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/f6/25/eb/talakona-waterfall.jpg?w=300&h=-1&s=1"
+                    alt="tirupati"
+                  />
+                  <div>
+                    <h2>tirupati, India</h2>
+                  </div>
+                </div>
+              </swiper-slide>
+              <swiper-slide>
+                <div class="card" onclick="display('section_coimbatore')">
+                  <img
+                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/c8/55/10/kovai-kutralam-falls.jpg?w=300&h=300&s=1"
+                    alt="coimbatore"
+                  />
+                  <div>
+                    <h2>coimbatore, India</h2>
+                  </div>
+                </div>
+              </swiper-slide>
+            </swiper-container>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------section1------------------- -->
+
+      <!-- ---------------------section_mysore------------------- -->
+      <div id="section_mysore" class="max_container">
+        <div class="heading_container">
+          <button class="btn btn-primary" onclick="display('section1')">
+            home
+          </button>
+          <a href="#todo">
+            <button class="btn btn-primary" onclick="display('section1')">
+              things to do
+            </button>
+          </a>
+          <h1>Mysore</h1>
+        </div>
+        <div class="image_gallery">
+          <div>
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/01/81/d6/d8/during-daytime.jpg?w=700&h=300&s=1"
+              alt="palace"
+            />
+          </div>
+          <div>
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/aa/dd/9e/chamundeswari-temple.jpg?w=600&h=400&s=1"
+              alt="temple"
+            />
+          </div>
+          <div>
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/02/5f/85/cb/filename-img-1767-jpg.jpg?w=1400&h=500&s=1"
+              alt="temple"
+            />
+          </div>
+          <div>
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/02/dd/3b/77/st-philomena-s-church.jpg?w=1200&h=500&s=1"
+              alt="church"
+            />
+          </div>
+        </div>
+        <div class="things_todo" id="todo">
+          <div class="things_todo_heading">
+            <h2>things to do</h2>
+          </div>
+          <div class="things_todo_card_container">
+            <div
+              class="things_todo_card"
+              onclick="display('section_mysore_palace')"
+            >
+              <div class="things_todo_card_img">
+                <img
+                  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/40/63/77/the-palace-after-the.jpg?w=600&h=-1&s=1"
+                  alt="place_image"
+                />
+              </div>
+              <div class="things_todo_card_info">
+                <h3>Mysuru Palace</h3>
+                <p>rarting - 4.4 (6,310)</p>
+              </div>
+            </div>
+            <div
+              class="things_todo_card"
+              onclick="display('section_mysore_palace')"
+            >
+              <div class="things_todo_card_img">
+                <img
+                  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/aa/fd/2e/hotel-le-ruchi-the-prince.jpg?w=600&h=400&s=1"
+                  alt="hotel_image"
+                />
+              </div>
+              <div class="things_todo_card_info">
+                <h3>Hotel Le Ruchi the Prince</h3>
+                <p>rarting - 4.7 (1030)</p>
+              </div>
+            </div>
+            <div
+              class="things_todo_card"
+              onclick="display('section_mysore_palace')"
+            >
+              <div class="things_todo_card_img">
+                <img
+                  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/c2/5e/4d/temple-1-largejpg.jpg?w=600&h=400&s=1"
+                  alt="Namdroling Monastery"
+                />
+              </div>
+              <div class="things_todo_card_info">
+                <h3>Namdroling Monastery</h3>
+                <p>rarting - 4.4 (2,370)</p>
+              </div>
+            </div>
+            <div
+              class="things_todo_card"
+              onclick="display('section_mysore_palace')"
+            >
+              <div class="things_todo_card_img">
+                <img
+                  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/0c/d2/73/venugopala-swamy-temple.jpg?w=600&h=400&s=1"
+                  alt="Venugopala Swamy Temple"
+                />
+              </div>
+              <div class="things_todo_card_info">
+                <h3>Venugopala Swamy Temple</h3>
+                <p>rarting - 4.5 (169)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------section_mysore------------------- -->
+      <!-- ---------------------section_ooty------------------- -->
+      <div id="section_ooty" class="max_container">
+        <div class="heading_container">
+          <button class="btn btn-primary" onclick="display('section1')">
+            home
+          </button>
+          <h1>ooty</h1>
+        </div>
+        <div class="image_gallery">
+          <div>
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/84/3c/bc/upper-bhavani-lake.jpg?w=1400&h=500&s=1"
+              alt="place"
+            />
+          </div>
+          <div>
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/48/d2/42/photo0jpg.jpg?w=1400&h=500&s=1"
+              alt="place"
+            />
+          </div>
+          <div>
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/02/4c/f4/a5/pykara-falls.jpg?w=1400&h=500&s=1"
+              alt="place"
+            />
+          </div>
+          <div>
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/02/67/20/19/filename-img-5799-jpg.jpg?w=1400&h=500&s=1"
+              alt="place"
+            />
+          </div>
+        </div>
+        <div class="things_todo">
+          <div class="things_todo_heading">
+            <h2>things to do</h2>
+          </div>
+          <div class="things_todo_card_container">
+            <div class="things_todo_card" onclick="display('section_ooty_pykara')">
+              <div class="things_todo_card_img">
+                <img
+                  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/41/69/96/pykara-falls-water-flow.jpg?w=600&h=-1&s=1"
+                  alt="place_image"
+                />
+              </div>
+              <div class="things_todo_card_info">
+                <h3>Pykara Lake</h3>
+                <p>rating - 4.2 (1,699)</p>
+              </div>
+            </div>
+            <div class="things_todo_card" onclick="display('section_ooty_pykara')">
+              <div class="things_todo_card_img">
+                <img
+                  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/9b/41/39/fb-img-1536802621189.jpg?w=600&h=400&s=1"
+                  alt="place_image"
+                />
+              </div>
+              <div class="things_todo_card_info">
+                <h3>Pykara Falls</h3>
+                <p>rating - 4.1 (701)</p>
+              </div>
+            </div>
+            <div class="things_todo_card" onclick="display('section_ooty_pykara')">
+              <div class="things_todo_card_img">
+                <img
+                  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/e4/88/d9/a-view-from-the-top.jpg?w=600&h=400&s=1"
+                  alt="place_image"
+                />
+              </div>
+              <div class="things_todo_card_info">
+                <h3>Government Rose Garden</h3>
+                <p>rating - 4.0 (1,314)</p>
+              </div>
+            </div>
+            <div class="things_todo_card" onclick="display('section_ooty_pykara')">
+              <div class="things_todo_card_img">
+                <img
+                  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/e9/6b/d3/another-wonderful-stone.jpg?w=600&h=400&s=1"
+                  alt="place_image"
+                />
+              </div>
+              <div class="things_todo_card_info">
+                <h3>Nilgiri Mountain</h3>
+                <p>rating - 4.3 (1,615)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------section_ooty------------------- -->
+      <!-- ---------------------section_madikeri------------------- -->
+      <div id="section_madikeri" class="max_container">
+        <div class="heading_container">
+          <button class="btn btn-primary" onclick="display('section1')">
+            home
+          </button>
+          <h1>madikeri</h1>
+        </div>
+        <div class="image_gallery">
+          <div>
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/e8/14/c9/closeup-view.jpg?w=1400&h=500&s=1"
+              alt="place"
+            />
+          </div>
+          <div>
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/01/8d/a2/50/club-mahindra-kodagu.jpg?w=1200&h=-1&s=1"
+              alt="place"
+            />
+          </div>
+          <div>
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/b2/fc/b2/madikeri-fort.jpg?w=1400&h=500&s=1"
+              alt="place"
+            />
+          </div>
+          <div>
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/8e/98/6b/palce-to-see-sunset.jpg?w=1400&h=500&s=1"
+              alt="place"
+            />
+          </div>
+        </div>
+        <div class="things_todo">
+          <div class="things_todo_heading">
+            <h2>things to do</h2>
+          </div>
+          <div class="things_todo_card_container">
+            <div class="things_todo_card" onclick="display('section_mandalpatti')">
+              <div class="things_todo_card_img">
+                <img
+                  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/33/ea/d9/caption.jpg?w=600&h=400&s=1"
+                  alt="place_image"
+                />
+              </div>
+              <div class="things_todo_card_info">
+                <h3>Mandalpatti Peak</h3>
+                <p>rating - 4.6 (676)</p>
+              </div>
+            </div>
+            <div class="things_todo_card" onclick="display('section_mandalpatti')">
+              <div class="things_todo_card_img">
+                <img
+                  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/e0/bf/2f/photo0jpg.jpg?w=600&h=400&s=1"
+                  alt="place_image"
+                />
+              </div>
+              <div class="things_todo_card_info">
+                <h3>Raja's Seat</h3>
+                <p>rating - 3.9 (1,248)</p>
+              </div>
+            </div>
+            <div class="things_todo_card" onclick="display('section_mandalpatti')">
+              <div class="things_todo_card_img">
+                <img
+                  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/4c/b7/e1/club-mahindra-madikeri.jpg?w=600&h=400&s=1"
+                  alt="place_image"
+                />
+              </div>
+              <div class="things_todo_card_info">
+                <h3>Club Mahindra</h3>
+                <p>rating - 4.6 (6,152)</p>
+              </div>
+            </div>
+            <div class="things_todo_card" onclick="display('section_mandalpatti')">
+              <div class="things_todo_card_img">
+                <img
+                  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/05/c9/23/raja-s-tomb.jpg?w=600&h=400&s=1"
+                  alt="place_image"
+                />
+              </div>
+              <div class="things_todo_card_info">
+                <h3>Raja's Tomb</h3>
+                <p>rating - 3.4 (613)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------section_madikeri------------------- -->
+      <!-- ---------------------section_tirupati------------------- -->
+      <div id="section_tirupati" class="max_container">
+        <div class="heading_container">
+          <button class="btn btn-primary" onclick="display('section1')">
+            home
+          </button>
+          <h1>tirupati</h1>
+        </div>
+        <div class="image_gallery">
+          <div>
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/f6/25/eb/talakona-waterfall.jpg?w=1400&h=500&s=1"
+              alt="place"
+            />
+          </div>
+          <div>
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/01/1d/36/8b/caption.jpg?w=800&h=300&s=1"
+              alt="place"
+            />
+          </div>
+          <div>
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/02/68/c9/a4/filename-dsc01146-jpg.jpg?w=1000&h=400&s=1"
+              alt="place"
+            />
+          </div>
+          <div>
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/01/88/13/14/golden-tirupati-temple.jpg?w=1400&h=500&s=1"
+              alt="place"
+            />
+          </div>
+        </div>
+        <div class="things_todo">
+          <div class="things_todo_heading">
+            <h2>things to do</h2>
+          </div>
+          <div class="things_todo_card_container">
+            <div class="things_todo_card"  onclick="display('section_tirupati_temple')">
+              <div class="things_todo_card_img">
+                <img
+                  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/47/bb/ef/tirumala-temple.jpg?w=600&h=400&s=1"
+                  alt="place_image"
+                />
+              </div>
+              <div class="things_todo_card_info">
+                <h3>Tirumala Temple</h3>
+                <p>rating - 4.6 (2,634)</p>
+              </div>
+            </div>
+            <div class="things_todo_card"  onclick="display('section_tirupati_temple')">
+              <div class="things_todo_card_img">
+                <img
+                  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/70/74/7c/20170917-104339-largejpg.jpg?w=600&h=400&s=1"
+                  alt="place_image"
+                />
+              </div>
+              <div class="things_todo_card_info">
+                <h3>Sri Varahaswami</h3>
+                <p>rating - 4.6 (196)</p>
+              </div>
+            </div>
+            <div class="things_todo_card"  onclick="display('section_tirupati_temple')">
+              <div class="things_todo_card_img">
+                <img
+                  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/2a/48/c8/japali-teertham.jpg?w=600&h=400&s=1"
+                  alt="place_image"
+                />
+              </div>
+              <div class="things_todo_card_info">
+                <h3>Japali Teertham</h3>
+                <p>rating - 4.6 (49)</p>
+              </div>
+            </div>
+            <div class="things_todo_card"  onclick="display('section_tirupati_temple')">
+              <div class="things_todo_card_img">
+                <img
+                  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/36/02/5e/on-the-new-yearsday.jpg?w=600&h=400&s=1"
+                  alt="place_image"
+                />
+              </div>
+              <div class="things_todo_card_info">
+                <h3>Tirumala Tirupati</h3>
+                <p>rating - 4.5 (549)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------section_tirupati------------------- -->
+      <!-- ---------------------section_coimbatore------------------- -->
+      <div id="section_coimbatore" class="max_container">
+        <div class="heading_container">
+          <button class="btn btn-primary" onclick="display('section1')">
+            home
+          </button>
+          <h1>coimbatore</h1>
+        </div>
+        <div class="image_gallery">
+          <div>
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/c8/55/10/kovai-kutralam-falls.jpg?w=1400&h=500&s=1"
+              alt="place"
+            />
+          </div>
+          <div>
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/c8/55/10/kovai-kutralam-falls.jpg?w=1400&h=500&s=1"
+              alt="place"
+            />
+          </div>
+          <div>
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/78/80/ec/waterfall-estates.jpg?w=1400&h=500&s=1"
+              alt="place"
+            />
+          </div>
+          <div>
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/c0/a0/59/bethesda-international.jpg?w=800&h=-1&s=1"
+              alt="place"
+            />
+          </div>
+        </div>
+        <div class="things_todo">
+          <div class="things_todo_heading">
+            <h2>things to do</h2>
+          </div>
+          <div class="things_todo_card_container">
+            <div class="things_todo_card" onclick="display('section_shiva')">
+              <div class="things_todo_card_img">
+                <img
+                  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/89/13/53/img-20191007-150516-largejpg.jpg?w=600&h=400&s=1"
+                  alt="place_image"
+                />
+              </div>
+              <div class="things_todo_card_info">
+                <h3>Adiyogi Shiva</h3>
+                <p>rating - 4.6 (560)</p>
+              </div>
+            </div>
+            <div class="things_todo_card" onclick="display('section_shiva')">
+              <div class="things_todo_card_img">
+                <img
+                  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/4a/cf/6e/photo0jpg.jpg?w=600&h=400&s=1"
+                  alt="place_image"
+                />
+              </div>
+              <div class="things_todo_card_info">
+                <h3>Marudhamalai Adivaram</h3>
+                <p>rating - 4.6 (196)</p>
+              </div>
+            </div>
+            <div class="things_todo_card" onclick="display('section_shiva')">
+              <div class="things_todo_card_img">
+                <img
+                  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/be/4d/7e/vellingiri-hill-temple.jpg?w=600&h=400&s=1"
+                  alt="place_image"
+                />
+              </div>
+              <div class="things_todo_card_info">
+                <h3>Vellingiri Hill Temple</h3>
+                <p>rating - 4.7 (111)</p>
+              </div>
+            </div>
+            <div class="things_todo_card" onclick="display('section_shiva')">
+              <div class="things_todo_card_img">
+                <img
+                  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/b7/42/0a/o-by-tamara-coimbatore.jpg?w=600&h=-1&s=1"
+                  alt="place_image"
+                />
+              </div>
+              <div class="things_todo_card_info">
+                <h3>O By Tamara</h3>
+                <p>rating - 4.9 (303)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------section_coimbatore------------------- -->
+      <!-- ---------------------section_mysore_palace------------------- -->
+      <div id="section_mysore_palace" class="max_container">
+        <div class="place_container">
+          <div class="place_heading">
+            <h1>Mysuru Palace</h1>
+            <p>
+              4.4 (6,310 reviews) #3 of 98 things to do in Mysuru (Mysore)
+              Castles
+            </p>
+            <p>timings:- 10:00 AM - 5:30 PM</p>
+          </div>
+          <div class="place_info">
+            <div>
+              <h3>About</h3>
+              <p>
+                This 1912 structure is one of the largest palaces in the country
+                and contains art from around the world.
+              </p>
+              <div class="button_container">
+                <button class="btn btn-primary" onclick="display('section1')">
+                  home
+                </button>
+                <button
+                  class="btn btn-primary"
+                  onclick="display('section_mysore')"
+                >
+                  more palces in mysore
+                </button>
+              </div>
+            </div>
+            <div>
+              <img
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/87/36/e2/caption.jpg?w=900&h=500&s=1"
+                alt="place"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------section_mysore_palace------------------- -->
+      <!-- ---------------------section_ooty_pykara------------------- -->
+      <div id="section_ooty_pykara" class="max_container">
+        <div class="place_container">
+          <div class="place_heading">
+            <h1>Pykara Falls</h1>
+            <p>
+              4.1 (701 reviews) #5 of 71 things to do in Ooty (Udhagamandalam)
+              Waterfalls
+            </p>
+            <p>8:45 AM - 5:30 PM</p>
+          </div>
+          <div class="place_info">
+            <div>
+              <h3>About</h3>
+              <p>
+                Originating in the Mukurthi peak, Pykara River and the
+                waterfalls the river produces is one of the most beautiful and
+                majestic sights that you will get to see in Ooty.
+              </p>
+              <div class="button_container">
+                <button class="btn btn-primary" onclick="display('section1')">
+                  home
+                </button>
+                <button
+                  class="btn btn-primary"
+                  onclick="display('section_ooty')"
+                >
+                  more palces in ooty
+                </button>
+              </div>
+            </div>
+            <div>
+              <img
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/9b/41/39/fb-img-1536802621189.jpg?w=900&h=-1&s=1"
+                alt="place"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------section_ooty_pykara------------------- -->
+    </div>
+      <!-- ---------------------section_mandalpatti------------------- -->
+      <div id="section_mandalpatti" class="max_container">
+        <div class="place_container">
+          <div class="place_heading">
+            <h1>Mandalpatti Peak</h1>
+            <p>
+              4.6
+              (676 reviews)
+              #1 of 15 things to do in Madikeri
+              Lookouts
+            </p>
+            <p>8:45 AM - 5:30 PM</p>
+          </div>
+          <div class="place_info">
+            <div>
+              <h3>About</h3>
+              <p>
+                Mandalpatti, crowned at a height of 1600m, is situated at around 18 km from Madikeri, Coorg. Gradually evolving as one of the best tourist spots in Coorg, this fascinating trail is located en route to Abbey Falls.
+              </p>
+              <div class="button_container">
+                <button class="btn btn-primary" onclick="display('section1')">
+                  home
+                </button>
+                <button
+                  class="btn btn-primary"
+                  onclick="display('section_madikeri')"
+                >
+                  more palces in madikeri
+                </button>
+              </div>
+            </div>
+            <div>
+              <img
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/33/ea/d9/caption.jpg?w=900&h=-1&s=1"
+                alt="place"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------section_mandalpatti------------------- -->
+      <!-- ---------------------section_tirupati_temple------------------- -->
+      <div id="section_tirupati_temple" class="max_container">
+        <div class="place_container">
+          <div class="place_heading">
+            <h1>Tirumala Temple</h1>
+            <p>
+              4.6
+              (2,634 reviews)
+              #3 of 55 things to do in Tirupati
+              Historic SitesReligious Sites
+            </p>
+            <p>8:45 AM - 5:30 PM</p>
+          </div>
+          <div class="place_info">
+            <div>
+              <h3>About</h3>
+              <p>
+                Tirumala is a census town in Chittoor district of the Indian state of Andhra Pradesh. The town is a part of Tirupati Urban Development Authority and located in Tirupati mandal of Tirupati revenue division.
+              </p>
+              <div class="button_container">
+                <button class="btn btn-primary" onclick="display('section1')">
+                  home
+                </button>
+                <button
+                  class="btn btn-primary"
+                  onclick="display('section_madikeri')"
+                >
+                  more palces in tirupati
+                </button>
+              </div>
+            </div>
+            <div>
+              <img
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/7b/f4/31/tirumala-temple.jpg?w=900&h=-1&s=1"
+                alt="place"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------section_tirupati_temple------------------- -->
+      <!-- ---------------------section_shiva------------------- -->
+      <div id="section_shiva" class="max_container">
+        <div class="place_container">
+          <div class="place_heading">
+            <h1>Adiyogi Shiva</h1>
+            <p>
+              4.6
+              (560 reviews)
+              #1 of 99 things to do in Coimbatore
+              Religious SitesMonuments & Statues
+            </p>
+            <p>6:00 AM - 8:00 PM</p>
+          </div>
+          <div class="place_info">
+            <div>
+              <h3>About</h3>
+              <p>
+                Adiyogi is a 112 foot statue inaugrated by Prime Minister Narendra Modi and Sadhguru. It is based in the foothills of Velliagiri mountains and is a part of Isha Yoga Center. In front of the statue in a mandapam, sadhguru has also consecrated a yogeshwara linga.
+              </p>
+              <div class="button_container">
+                <button class="btn btn-primary" onclick="display('section1')">
+                  home
+                </button>
+                <button
+                  class="btn btn-primary"
+                  onclick="display('section_coimbatore')"
+                >
+                  more palces in coimbatore
+                </button>
+              </div>
+            </div>
+            <div>
+              <img
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/89/13/53/img-20191007-150516-largejpg.jpg?w=900&h=-1&s=1"
+                alt="place"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------------section_shiva------------------- -->
+    </div>
+
+    <!-- --------------------------- js -------------------------- -->
+    <script
+      type="text/javascript"
+      src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"
+    ></script>
+  </body>
+</html>
